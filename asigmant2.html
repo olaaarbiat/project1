@@ -1,6 +1,79 @@
-div من خصائص HTML4
-.section من خصائص HTML5 
-و هما عباره عن مكان تضع به مجموعه TAGS لا يوجد فرق كبير بينها ولكن الافضل ان تتبع النظم الاحدث لانها تاتى بحل لمشكلات قديمة او تقوم بتنفيذ الكود بشكل اسرع 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV</title>
+<style>
+    body {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin:0;
+        padding: 0;
+        display:flex;
+    }
 
-<article>تمثيل جزء من المستند أو الصفحة أو التطبيق أو الموقع الغرض منها هو القدرة على إعادة توزيعها واستخدامها بشكل مستقل، مثل موضوع في منتدى أو مقالة في صحيفة أو تدوينة.
-<p>يُمثِّل العنصر <p> فقرةً نصيةً، وتُعرَض الفقرات عادةً على شكل أقسام من النص يفصل بينها بمسافة فارفة رأسية، أو بزيادة محاذاة أوّل سطر.
+    #left-side {
+        width:30%;
+      
+        background-color: rgb(0, 148, 247);
+        color: white;
+        padding: 1px;
+    }
+    
+       
+    #right-side {
+        width: 70%;
+        padding: 30px;
+    }
+    .info {
+        margin-bottom:10%;
+    }
+    h1{
+        text-align: center;
+    }
+    img{ border-radius:50% ;
+        height: 50%;
+        width: 50%
+      
+    }
+</style>
+</head>
+<body>
+   
+  
+    <div id="left-side">
+        <div id="image">
+           <img src="me.jpg" class="img">
+        </div>
+     
+
+    
+    
+        <h2>Personal Information</h2>
+        <p>Name: Ola Arbiat</p>
+        <p>Email: oarabiat52@gmail.com</p>
+        <p>Phone:0775284929 </p>
+    </div>
+    <div id="right-side">
+        <div class="info">
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>University :AL_Balqa University </p>
+            <p>  untile Graduated  </p>
+        </div>
+        <div class="info">
+            <h2>Experience</h2>
+           
+            <p>Responsibilities: Developed web applications using various technologies...</p>
+        </div>
+        <div class="info">
+            <h2>Skills</h2>
+            <p>Programming Languages: Java, Python, JavaScript,c++</p>
+           
+            <p>Databases: MySQL, </p>
+            <p>Others: HTML/CSS, Git</p>
+        </div>
+    </div>
+
+</body>
+</html>
